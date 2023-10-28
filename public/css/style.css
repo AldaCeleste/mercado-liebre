@@ -1,0 +1,57 @@
+.encabezado{
+  background-color: #EAC926;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.centrado{ text-align:center;}
+
+.burger-menu{text-align: center;
+color:#03264C;}
+
+/* Main */
+
+main{
+
+  width: 90%;
+
+}
+
+h2{ font-size: 24;}
+
+section {
+  margin-bottom: 10px; /* Agrega separación de 10 píxeles entre los artículos */
+  padding: 15px; /* Espacio interno de 15 píxeles en cada artículo */
+  border-top: 1px solid #ebebeb; /* Borde superior de 1 píxel, línea sólida y color #ebebeb */
+}
+
+.precio{font-size: 18px; color:orangered}
+
+.descripcion{font-size: 16px;color:blueviolet}
+
+/* footer */
+
+.centradoFinal{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
