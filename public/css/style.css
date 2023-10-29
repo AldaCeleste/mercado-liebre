@@ -1,57 +1,116 @@
-.encabezado{
+/* 
+Paleta de colores:
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+● Tipografías
+Familia: 'Roboto'
+
+● Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+● Íconos
+link del enlace de mi propio kit 
+<script src="https://kit.fontawesome.com/c2d7c9299d.js" crossorigin="anonymous"></script>
+
+*/
+
+
+/* 
+<-----GENERALES---->
+<-------------- --->
+ */
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  background-color: #ebebeb ;
+}
+
+
+/*
+<-----HEADER---->
+<--------------->
+*/
+
+header {
   background-color: #EAC926;
 }
 
-header {
-  font-family: 'Roboto', sans-serif;
-  
+ul {
+  list-style: none;
 }
 
-.centrado{ text-align:center;}
-
-.burger-menu{text-align: center;
-color:#03264C;}
-
-/* Main */
-
-main{
-
-  width: 90%;
-
+.centrado {
+  text-align: center;
 }
 
-h2{ font-size: 24;}
-
-section {
-  margin-bottom: 10px; /* Agrega separación de 10 píxeles entre los artículos */
-  padding: 15px; /* Espacio interno de 15 píxeles en cada artículo */
-  border-top: 1px solid #ebebeb; /* Borde superior de 1 píxel, línea sólida y color #ebebeb */
+.navbar a,
+.loginbar a {
+  text-decoration: none;
+  color: black;
 }
 
-.precio{font-size: 18px; color:orangered}
+.burger-menu {
 
-.descripcion{font-size: 16px;color:blueviolet}
-
-/* footer */
-
-.centradoFinal{
+  background-color: #1259c3;
+  color: #ebebeb;
+  border: none;
+  border-radius: 20%;
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  -ms-border-radius: 20%;
+  -o-border-radius: 20%;
+  padding: 10px;
+  font-size: 18px;
   text-align: center;
 }
 
 
+/* 
+<-----MAIN---->
+<--------------->
+ */
+
+.titulares {
+  font-size: 24px;
+}
+
+.precio {
+  font-size: 18px;
+}
+
+.descuento,
+.descripcion {
+  font-size: 16px;
+}
 
 
+/* 
+<-----FOOTER---->
+<--------------->
+ */
 
+.centradoFinal {
+  text-align: center;
 
+}
 
+footer i {
+  font-size: 2em;
+  color: #1259c3;
+}
 
+footer article {
+  margin:30px;
 
-
-
-
-
-
-
-
-
-
+}
