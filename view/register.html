@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="author" content="Celeste Paez">
+    <meta name="description" content="Proyecto integrador DH">
+
+    <!-- LINKS-->
+    <!-- Css Propios -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/register.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Font Awesome: el siguiente enlace es el sugerido para trabajar en el proyecto. -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.3/css/all.min.css" rel="stylesheet" /> -->
+
+
+
+    <!--FavIcon-->
+    <link rel="shortcut icon" href="" type="/images/favico.png">
+
+    <title>Registro</title>
+</head>
+
+
+<header>
+
+</header>
+
+<main>
+
+    <form class="form-general" action="./" method="POST">
+
+        <!-- --- -- -- --   -->
+        <!--DATOS PERSONALES-->
+        <!-- --- -- -- --   -->
+
+        <h4>Datos personales</h4>
+        <div class="datos-personales">
+            <label for="nombre"> Nombre y apellido</label>
+            <input class=" input-datos-personales" type="text" name ="nombre"  id="nombre" placeholder="nombre">
+    </div>
+
+        <div class="datos-personales"> 
+            <label for="nombre"> Nombre del usuario</label>
+            <input class=" input-datos-personales" type="text" name="nombre" id="nombre">
+   </div>
+
+        <div class="datos-personales"> 
+            <label for="email"> Email</label>
+            <input class=" input-datos-personales" type="email" name="email" id="email">
+   </div>
+
+        <div class="datos-personales"> 
+            <label for="date"> Fecha de Nacimiento</label>
+            <input  class=" input-datos-personales"type="date" name="date" id="date">
+    </div>
+
+       
+
+        <!-- --- -- -- --   -->
+        <!--   PERFIL USU   -->
+        <!-- --- -- -- --   -->
+
+        <div class=" perfil-usu">
+
+        <h4>Perfil de usuario</h4>
+            <label for="perfil_usuario">Comprador</label> 
+            <input class=" input-datos-personales" type="radio" name="perfil_usuario" value="comprador" placeholder="comprador">
+            
+            <label for="perfil_usuario">Vendedor</label>
+            <input class=" input-datos-personales" type="radio" name="perfil_usuario" value="Vendedor" placeholder="vendedor">
+        </div>
+
+        <!-- --- -- -- --   -->
+        <!--   CATEGORIAS   -->
+        <!-- --- -- -- --   -->
+
+        <h4>Categorías de interes</h4>
+
+        <div class="categorias">
+
+            <label for ="categorias"> Electro</label>
+            <input type="checkbox" name="categorias" value="Electro" placeholder=" electro">
+            
+            
+            <label for ="categorias"> Moda</label>
+            <input type="checkbox" name="categorias" value="Moda" placeholder=" moda"> 
+            
+            <label for="categorias"> Hogar </label>
+            <input type="checkbox" name="categorias" value="Hogar" placeholder="hogar"> 
+            
+            <label for ="categorias">Jugueteria </label>
+            <input type="checkbox" name="categorias" value="Juguetería" placeholder="Jugueteria">
+            
+            <label for ="categorias"></label> vida Sana</label>
+            <input type="checkbox" name="categorias" value="Vida sana" placeholder="vida-sana"> 
+            
+        </div>
+            <br>
+            
+            <!-- --- -- -- --   -->
+        <!--    FOTO        -->
+        <!-- --- -- -- --   -->
+
+        <label for="imagen-perfil"> Suba su foto </label>
+        <input type="file" name="imagen-perfil" placeholder="foto">
+
+
+        <!-- --- -- -- --   -->
+        <!--   CONTRASEÑA   -->
+        <!-- --- -- -- --   -->
+
+
+        <div class= "contrasena">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" placeholder="Contraseña">
+        
+            <label for="password">Confirme contraseña</label>
+            <input type="password" name="password" id="password" placeholder="Confirmar ">
+        </div>
+
+        <!-- --- -- -- --   -->
+        <!--    BOTONES     -->
+        <!-- --- -- -- --   -->
+
+        <button class="botones" type="submit">Enviar</button>
+        <button class="botones" type="reset">Cancelar</button>
+
+    </form>
+
+
+
+
+
+
+
+
+</main>
+
+<footer>
+
+</footer>
+</body>
