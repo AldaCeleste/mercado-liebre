@@ -1,0 +1,395 @@
+/*
+● Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+● Tipografías
+Familia: 'Roboto'
+font-family: 'Roboto', sans-serif;
+Versiones:300, 400, 700
+
+● Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+● Íconos
+Se optienen de fontawesome
+https://fontawesome.com/icons?d=gallery&m=free
+Mi kit de iconos es
+<script src="https://kit.fontawesome.com/30f2e17de6.js" crossorigin="anonymous"></script>
+
+menu hamburguesa 
+<i class="fa-solid fa-bars"></i>
+
+camionsito 🚚
+<i class="fa-solid fa-truck"></i>
+
+manito con peso
+<i class="fa-solid fa-hand-holding-dollar"></i>
+
+lupa de buscar
+<i class="fa-solid fa-magnifying-glass"></i>
+
+id tarjeta
+<i class="fa-regular fa-id-card"></i>
+
+flecha ingreso
+<i class="fa-solid fa-arrow-right-to-bracket"></i>
+
+canasto
+<i class="fa-solid fa-basket-shopping"></i>
+
+credit card
+<i class="fa-solid fa-credit-card"></i>
+
+regalo
+<i class="fa-solid fa-gift"></i>
+
+usuario con escudo
+<i class="fa-solid fa-user-shield"></i>
+
+*/
+
+/* -------------------- */
+/*      Generales       */
+/* -------------------- */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 0.75rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------- */
+/*        HEADER        */
+/* -------------------- */
+
+header {
+    background-color: #EAC926;
+    padding: 1rem;
+}
+
+.main-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+}
+
+.searchbar {
+    padding: 1rem;
+    width: 50%;
+}
+
+.searchbar input{
+    width: 75%;
+}
+
+.promo {
+    flex-grow: 1;
+    text-align: center;
+padding: 1rem;
+}
+
+
+.navegation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.navbar,
+.loginbar {
+    font-size: 0.75rem;
+    display: none;
+}
+
+.navbar li{
+    margin-right: 0.5rem;
+}
+.loginbar li{
+    margin-left: 0.5rem;
+}
+
+
+.navbar a,
+.loginbar a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.burger-menu {
+    margin: auto;
+    display: block;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #03264C;
+    border: none;
+    padding: 0.625rem;
+    -o-border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    border-radius: 20%;
+}
+
+/* -------------------- */
+/*         MAIN         */
+/* -------------------- */
+
+div.last-visit,
+div.offers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price {
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount {
+    width: 70%;
+}
+
+.discount,
+.description {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description {
+    color: #666;
+}
+
+.description {
+    opacity: 0%;
+    margin-top: 20px;
+    transition: all 450ms;
+    -webkit-transition: all 450ms;
+    -moz-transition: all 450ms;
+    -ms-transition: all 450ms;
+    -o-transition: all 450ms;
+    /* visibility: hidden; */
+}
+
+main article:hover .description {
+    opacity: 100%;
+    /* visibility: visible; */
+}
+
+main section article {
+    -webkit-transition: all 450ms;
+    -moz-transition: all 450ms;
+    -ms-transition: all 450ms;
+    -o-transition: all 450ms;
+    transition: all 450ms;
+}
+
+main article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+section.banner img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article {
+    background-color: #fff;
+    margin: 10px 0px;
+}
+
+main section article img {
+    width: 100%;
+}
+
+main section article i,
+.discount {
+    color: #39b54a;
+}
+
+
+/* CAMIONCITO */
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 450ms;
+    -webkit-transition: all 450ms;
+    -moz-transition: all 450ms;
+    -ms-transition: all 450ms;
+    -o-transition: all 450ms;
+}
+
+main article:hover i {
+    transform: rotateZ(-90deg);
+    -webkit-transform: rotateZ(-90deg);
+    -moz-transform: rotateZ(-90deg);
+    -ms-transform: rotateZ(-90deg);
+    -o-transform: rotateZ(-90deg);
+}
+
+main section h3 {
+    margin: 20px 0px;
+}
+
+article div.main-article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+/* -------------------- */
+/*        FOOTER        */
+/* -------------------- */
+
+footer {
+    text-align: center;
+}
+
+footer i {
+    font-size: 2em;
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+
+footer li {
+    margin: 30px;
+}
+
+footer li:hover i{
+    color:purple;
+}
+
+@media (min-width: 361px) {
+
+    .searchbar{
+        display: flex;
+        justify-content: end;
+    }
+
+    .seachbar input{
+    }
+    
+    .navbar,
+    .loginbar {
+        display: flex;
+    }
+
+    main section article .description {
+        display: block;
+    }
+
+
+    main section div.products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    main section div.products article {
+        width: 45%;
+    }
+
+    .price,
+    .discount {
+        width: 50%;
+    }
+    
+    .burger-menu{
+        display:none;
+    }
+}
+
+/* Vista Tablet */
+@media (min-width: 769px) {
+
+    .logo, .searchbar, .promo{
+        width: 30%;
+    }
+    main section div.products article {
+        width: 22%;
+    }
+
+    footer ul{
+        display:flex;
+        justify-content: space-between;
+    }
+
+    footer li{
+        width: 30%;
+    }
+
+    footer li p{
+        margin-top: 0.5rem;
+        line-height: 1rem;
+    }
+
+}
+
+
+/* LOGIN */
+[type="submit"] {
+    -webkit-transition: all 450ms;
+    -moz-transition: all 450ms;
+    -ms-transition: all 450ms;
+    -o-transition: all 450ms;
+    transition: all 450ms;
+}
+
+[type="submit"]:hover {
+    background-color: #0022AA;
+}

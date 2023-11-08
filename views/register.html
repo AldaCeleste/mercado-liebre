@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="aprendiendoDiseñoWeb">
+  <meta name="author" content="Alda Celeste Paez">
+  <meta name="description" content="Mercado Liebre - Integrador DH">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+
+  <!--FavIcon-->
+  <link rel="shortcut icon" href="" type="/images/favico.png">
+
+  <!-- Titulo de la Pag -->
+  <title>Mercado Liebre - Register</title>
+</head>
+
+<body>
+  <!--Encabezados-->
+  <header>
+
+    <!-- ------------------- -->
+    <!--      CABECERA       -->
+    <!-- ------------------- -->
+
+    <div class="main-header">
+      <!-- LOGO -->
+      <a class="logo" href="/">
+        <img src="/images/logo-mercado-liebre.svg" alt="Logo Completo de la Pag de Mercado Liebre"
+          title="Ir a página principal">
+      </a>
+
+      <!-- SEARCH BAR -->
+      <form class="searchbar" action="GET">
+        <input type="text" name="buscar" id="search" placeholder="Buscar producto, marca, precio">
+        <button type="submit" title="buscar">
+          <!-- icono de la lupita 🔍 -->
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+
+      <h2 class="promo">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        Compra en cuotas y sin tarjeta de Crédito
+      </h2>
+
+    </div>
+
+
+    <!-- ------------------- -->
+    <!-- Barra de Navegacion -->
+    <!-- ------------------- -->
+    <nav class="navegation">
+
+      <!-- NAV BAR -->
+      <ul class="navbar">
+        <li> <a href="#">Oferta</a> </li>
+        <li> <a href="#">Tiendas Oficiales</a> </li>
+        <li> <a href="#">Vender</a> </li>
+        <li> <a href="#">Ayuda</a> </li>
+      </ul>
+
+      <!-- LOGIN BAR -->
+      <ul class="loginbar">
+        <li>
+          <a href="/register">Creá tu cuenta</a>
+          <i class="fa-regular fa-id-card"></i>
+        </li>
+        <li>
+          <a href="/login">Ingresá</a>
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </li>
+        <li>
+          <a href="#">Mis compras</a>
+          <i class="fa-solid fa-basket-shopping"></i>
+        </li>
+      </ul>
+
+      <!-- Boton Hamburguesa -->
+
+      <button class="burger-menu" type="button" title="hamburguesa">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </nav>
+
+
+  </header>
+
+  <main class="register">
+    <form action="/" method="POST">
+      <input type="text" name="name" placeholder="Nombre y apellido" required>
+      <input type="text" name="user" placeholder="Nombre de usuario" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <br>
+      <label for="birth_date"><b>Fecha de nacimiento</b></label>
+      <br>
+      <input type="date" name="birth_date" id="birth_date">
+      <br>
+      <input type="text" name="addres" placeholder="Domicilio">
+      <h4>Perfil del usuario</h4>
+      <div class="profile">
+        <input type="radio" name="profile" value="buy" id="buy">
+        <label for="buy">Comprador</label>
+        <input type="radio" name="profile" value="sell" id="sell">
+        <label for="sell">Vendedor</label>
+      </div>
+
+      <h4>Intereses</h4>
+      <div class="interests">
+        <div>
+          <input type="checkbox" name="interests" value="a" id="a">
+          <label for="a">Electro</label>
+        </div>
+        <div>
+          <input type="checkbox" name="interests" value="b" id="b">
+          <label for="b">Moda</label>
+        </div>
+        <div>
+          <input type="checkbox" name="interests" value="c" id="c">
+          <label for="c">Hogar</label>
+        </div>
+        <div>
+          <input type="checkbox" name="interests" value="d" id="d">
+          <label for="d">Juguetería</label>
+        </div>
+        <div>
+          <input type="checkbox" name="interests" value="e" id="e">
+          <label for="e">Vida sana</label>
+        </div>
+      </div>
+
+      <h4>Elegí tu foto de usuario</h4>
+      <input type="file" name="avatar">
+      <br>
+      <br>
+      <input type="password" name="pass" placeholder="Elegí tu contraseña" required>
+      <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña" required>
+      <br>
+      <br>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Borrar">
+      <br>
+      <br>
+    </form>
+  </main>
+  <footer>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/30f2e17de6.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

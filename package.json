@@ -1,13 +1,13 @@
 {
-  "name": "proyectoplayground",
+  "name": "html_css",
   "version": "1.0.0",
-  "description": "Esqueleto basico de una pagina",
+  "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node --watch app.js",
+    "start": "node app.js",
+    "dev": "node --watch app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
